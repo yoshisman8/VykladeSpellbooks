@@ -1,0 +1,162 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Weapons.Mithril_Spellbook.name",
+    "Description": "server.items.Weapons.Mithril_Spellbook.description"
+  },
+  "Categories": [
+    "Items.Weapons"
+  ],
+  "Icon": "Icons/ItemsGenerated/Weapon_Mithril_Spellbook.png",
+  "Quality": "Epic",
+  "ItemLevel": 60,
+  "Model": "Items/Weapons/Spellbook/Weapon_Mithril_Spellbook.blockymodel",
+  "Texture": "Items/Weapons/Spellbook/Weapon_Mithril_Spellbook.png",
+  "PlayerAnimationsId": "Spellbook",
+  "IconProperties": {
+    "Scale": 0.6,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -11,
+      -11
+    ]
+  },
+  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
+  "MaxStack": 1,
+  "Scale": 1.2,
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Spellbook"
+    ]
+  },
+  "Weapon": {
+    "EntityStatsToClear": [
+      "SignatureEnergy"
+    ],
+    "StatModifiers": {
+      "Mana": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 50
+        }
+      ],
+      "SignatureEnergy": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 12
+        }
+      ]
+    }
+  },
+  "ItemSoundSetId": "ISS_Weapons_Books",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Leather_Storm",
+        "Quantity": 4
+      },
+      {
+        "ItemId": "Ingredient_Bar_Mithril",
+        "Quantity": 6
+      },
+      {
+        "Quantity": 1,
+        "ItemId": "Ingredient_Voidheart"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Weapon_Bench",
+        "Categories": [
+          "Weapon_Spellbook"
+        ],
+        "RequiredTierLevel": 3
+      }
+    ]
+  },
+  "Interactions": {
+    "Secondary": "Root_Weapon_Sword_Secondary_Guard",
+    "Primary": "Root_Spellbook_Primary",
+    "Ability1": "Root_Spellbook_Signature"
+  },
+  "MaxDurability": 220,
+  "InteractionVars": {
+    "Spellbook_Cast_Cost": {
+      "Interactions": [
+        {
+          "Type": "ChangeStat",
+          "Parent": "Vyklade_Spellbook_Cast_Cost",
+          "StatModifiers": {
+            "Mana": -10,
+            "Stamina": -0.5
+          }
+        }
+      ]
+    },
+    "Spellbook_Cost_Check": {
+      "Interactions": [
+        {
+          "Type": "StatsCondition",
+          "Parent": "Vyklade_Spellbook_Cost_Check",
+          "Costs": {
+            "Mana": 11,
+            "Stamina": 0.5
+          }
+        }
+      ]
+    },
+    "Spellbook_Attack_Damage": {
+      "Interactions": [
+        {
+          "Type": "DamageEntity",
+          "Parent": "Vyklade_Spellbook_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "True": 28
+            }
+          }
+        }
+      ]
+    },
+    "Spellbook_Signature_Config": {
+      "Interactions": [
+        {
+          "Type": "SpawnDeployableFromRaycast",
+          "Parent": "Vyklade_Spellbook_Signature_Spawn",
+          "Config": {
+            "Type": "Aoe",
+            "Id": "SpellbookSignatureTrap",
+            "LiveDuration": 5,
+            "Invulnerable": true,
+            "Shape": "Cylinder",
+            "DamageCause": "SignatureMagic",
+            "AttackOwner": false,
+            "AttackTeam": false,
+            "AllowPlaceOnWalls": true,
+            "WireframeDebugVisuals": true,
+            "DebugVisuals": false,
+            "Height": 10,
+            "MaxLiveCount": 3,
+            "StartRadius": 5,
+            "DamageAmount": 3.75,
+            "Model": "Deployable_Spellbook_Trap",
+            "ModelPreview": "Deployable_Fire_Trap_Preview",
+            "DamageInterval": 0.25
+          },
+          "PreviewStatConditions": {
+            "DeployablePreview": 1
+          }
+        }
+      ]
+    }
+  },
+  "RenderDeployablePreview": true,
+  "Parent": "Weapon_Template_Spellbook"
+}

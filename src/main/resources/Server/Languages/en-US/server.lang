@@ -1,0 +1,15 @@
+items.Vyklade.Potion_Mana_Small.description = Doubles your <color is="#0096ff">Mana</color> regeneration for 2 minutes.
+items.Vyklade.Potion_Mana.description = Doubles your <color is="#0096ff">Mana</color> regeneration for 6 minutes.
+
+items.Weapons.Copper_Spellbook.name= Copper Spellbook
+items.Weapons.Iron_Spellbook.name= Iron Spellbook
+items.Weapons.Thorium_Spellbook.name= Thorium Spellbook
+items.Weapons.Cobalt_Spellbook.name= Cobalt Spellbook
+items.Weapons.Adamantite_Spellbook.name= Adamantite Spellbook
+items.Weapons.Mithril_Spellbook.name= Mithril Spellbook
+items.Weapons.Spellbook_Generic.description= Consumes <color is="#0096ff">Mana</color> to fire a short piercing beam.
+items.Weapons.Cobalt_Spellbook.description= Consumes <color is="#0096ff">Mana</color> to fire a short piercing beam.\nUses more <color is="#0096ff">Mana</color> to deal the <color is="#b89b27">Strongest</color> base damage.
+items.Weapons.Adamantite_Spellbook.description= Sets foes on <color is="#ba342b">Fire</color>.\nConsumes <color is="#0096ff">Mana</color> to fire a short piercing beam.
+items.Weapons.Mithril_Spellbook.description= Deals <color is="#ffffff">True</color> damage, Ignoring all <color is="#b89b27">Resistances</color>.\nConsumes <color is="#0096ff">Mana</color> to fire a short piercing beam.
+
+benchCategories.spellbooks= Spellbooks

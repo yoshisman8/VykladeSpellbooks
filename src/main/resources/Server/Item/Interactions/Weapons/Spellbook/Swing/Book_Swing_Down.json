@@ -1,0 +1,77 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemAnimationId": "SwingDown"
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 0.111,
+  "Next": {
+    "Type": "Parallel",
+    "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Selector",
+            "$Comment": "Length of Combat",
+            "RunTime": 0.055,
+            "Selector": {
+              "Id": "Horizontal",
+              "Direction": "ToLeft",
+              "TestLineOfSight": true,
+              "ExtendTop": 0.5,
+              "ExtendBottom": 0.5,
+              "StartDistance": 0.1,
+              "EndDistance": 2.5,
+              "Length": 30,
+              "RollOffset": 90,
+              "YawStartOffset": -15
+            },
+            "HitEntity": {
+              "Interactions": [
+                {
+                  "Type": "Replace",
+                  "DefaultValue": {
+                    "Interactions": [
+                      "Book_Swing_Down_Damage"
+                    ]
+                  },
+                  "Var": "Book_Swing_Down_Damage",
+                  "DefaultOk": true
+                }
+              ]
+            },
+            "Next": {
+              "Type": "Simple",
+              "$Comment": "Pad the interaction length",
+              "RunTime": 0.112
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Condition",
+            "RequiredGameMode": "Adventure",
+            "Next": "Block_Break"
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Replace",
+            "DefaultValue": {
+              "Interactions": [
+                "Block_Swing_Down_Effect"
+              ]
+            },
+            "Var": "Block_Swing_Down_Effect",
+            "DefaultOk": true
+          }
+        ]
+      }
+    ]
+  }
+}

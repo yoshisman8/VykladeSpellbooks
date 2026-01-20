@@ -1,0 +1,35 @@
+{
+  "Type": "DamageEntity",
+  "DamageEffects": {
+    "Knockback": {
+      "Type": "Force",
+      "VelocityConfig": {
+        "GroundResistance": 0.804,
+        "GroundResistanceMax": 0.0,
+        "AirResistance": 0.972,
+        "AirResistanceMax": 0.028,
+        "Threshold": 1.0,
+        "Style": "Exp"
+      },
+      "Force": 5,
+      "VelocityType": "Add",
+      "Direction": {
+        "X": 0,
+        "Y": 1.5,
+        "Z": -4
+      }
+    },
+    "WorldSoundEventId": "SFX_Skeleton_Mage_Spellbook_Impact",
+    "WorldParticles": [
+      {
+        "SystemId": "Impact_Sword_Charged"
+      }
+    ]
+  },
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Physical": 1
+    },
+    "Class": "Charged"
+  }
+}

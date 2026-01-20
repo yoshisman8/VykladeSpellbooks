@@ -1,0 +1,80 @@
+{
+  "Type": "SpawnDeployableFromRaycast",
+  "Config": {
+    "Type": "Turret",
+    "Id": "SignatureTurret",
+    "MaxLiveCount": 1,
+    "Model": "Vyklade_Spell_Signature_Turret",
+    "ModelPreview": "Deployable_Fire_Trap_Preview",
+    "LiveDuration": 5,
+    "Invulnerable": true,
+    "SpawnParticles": [
+      {
+        "SystemId": "Vyklade_Magic_Circle_Trap"
+      }
+    ],
+    "AllowPlaceOnWalls": true,
+    "WireframeDebugVisuals": true,
+    "ProjectileConfig": {
+      "Model": "Eye_Void_Blast",
+      "LaunchForce": 1
+    },
+    "ShotInterval": 1,
+    "BurstCount": 10,
+    "ProjectileDamage": 1,
+    "RespectTeams": true,
+    "TrackableRadius": 10,
+    "DetectionRadius": 10,
+    "RotationSpeed": 20
+  },
+  "PreviewStatConditions": {
+    "DeployablePreview": 1
+  },
+  "MaxPlacementDistance": 30,
+  "Failed": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "Simple",
+        "RunTime": 0.5
+      },
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "SignatureEnergy": 100
+        },
+        "ValueType": "Percent",
+        "Behaviour": "Set"
+      }
+    ]
+  },
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "DeployablePreview": 0,
+          "SignatureEnergy": 0
+        },
+        "Behaviour": "Set"
+      },
+      {
+        "Type": "TriggerCooldown",
+        "Cooldown": {
+          "Id": "SpellbookSignature",
+          "Cooldown": 20
+        }
+      }
+    ]
+  },
+  "CancelOnItemChange": false,
+  "Rules": {
+    "InterruptedBy": [
+      "Secondary"
+    ],
+    "Interrupting": [
+      "Secondary"
+    ]
+  }
+}

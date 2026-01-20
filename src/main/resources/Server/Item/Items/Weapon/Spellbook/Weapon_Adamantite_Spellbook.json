@@ -1,0 +1,166 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Weapons.Adamantite_Spellbook.name",
+    "Description": "server.items.Weapons.Spellbook_Generic.description"
+  },
+  "Categories": [
+    "Items.Weapons"
+  ],
+  "Icon": "Icons/ItemsGenerated/Weapon_Adamantite_Spellbook.png",
+  "Quality": "Rare",
+  "ItemLevel": 55,
+  "Model": "Items/Weapons/Spellbook/Book.blockymodel",
+  "Texture": "Items/Weapons/Spellbook/Weapon_Adamantite_Spellbook.png",
+  "PlayerAnimationsId": "Spellbook",
+  "IconProperties": {
+    "Scale": 0.7,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -7.8,
+      -7.8
+    ]
+  },
+  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
+  "MaxStack": 1,
+  "Scale": 1.2,
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Spellbook"
+    ]
+  },
+  "Weapon": {
+    "EntityStatsToClear": [
+      "SignatureEnergy"
+    ],
+    "StatModifiers": {
+      "Mana": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 40
+        }
+      ],
+      "SignatureEnergy": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 12
+        }
+      ]
+    }
+  },
+  "ItemSoundSetId": "ISS_Weapons_Books",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Leather_Heavy",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Bar_Adamantite",
+        "Quantity": 6
+      },
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Cindercloth",
+        "Quantity": 5
+      },
+      {
+        "Quantity": 15,
+        "ItemId": "Ingredient_Fire_Essence"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Weapon_Bench",
+        "Categories": [
+          "Weapon_Spellbook"
+        ],
+        "RequiredTierLevel": 3
+      }
+    ]
+  },
+  "Interactions": {
+    "Secondary": "Root_Weapon_Sword_Secondary_Guard",
+    "Primary": "Root_Spellbook_Primary",
+    "Ability1": "Root_Spellbook_Signature"
+  },
+  "MaxDurability": 180,
+  "InteractionVars": {
+    "Spellbook_Cast_Cost": {
+      "Interactions": [
+        {
+          "Type": "ChangeStat",
+          "Parent": "Vyklade_Spellbook_Cast_Cost",
+          "StatModifiers": {
+            "Mana": -8,
+            "Stamina": -0.5
+          }
+        }
+      ]
+    },
+    "Spellbook_Cost_Check": {
+      "Interactions": [
+        {
+          "Type": "StatsCondition",
+          "Parent": "Vyklade_Spellbook_Cost_Check",
+          "Costs": {
+            "Mana": 9,
+            "Stamina": 0.5
+          }
+        }
+      ]
+    },
+    "Spellbook_Attack_Damage": {
+      "Interactions": [
+        {
+          "Type": "DamageEntity",
+          "Parent": "Vyklade_Spellbook_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 25
+            }
+          }
+        }
+      ]
+    },
+    "Spellbook_Signature_Config": {
+      "Interactions": [
+        {
+          "Type": "SpawnDeployableFromRaycast",
+          "Parent": "Vyklade_Spellbook_Signature_Spawn",
+          "Config": {
+            "Type": "Aoe",
+            "Id": "SpellbookSignatureTrap",
+            "LiveDuration": 5,
+            "Invulnerable": true,
+            "Shape": "Cylinder",
+            "DamageCause": "SignatureMagic",
+            "AttackOwner": false,
+            "AttackTeam": false,
+            "AllowPlaceOnWalls": true,
+            "WireframeDebugVisuals": true,
+            "DebugVisuals": false,
+            "Height": 10,
+            "MaxLiveCount": 3,
+            "StartRadius": 5,
+            "DamageAmount": 3,
+            "Model": "Deployable_Spellbook_Trap",
+            "ModelPreview": "Deployable_Fire_Trap_Preview",
+            "DamageInterval": 0.25
+          },
+          "PreviewStatConditions": {
+            "DeployablePreview": 1
+          }
+        }
+      ]
+    }
+  },
+  "RenderDeployablePreview": true,
+  "Parent": "Weapon_Template_Spellbook"
+}

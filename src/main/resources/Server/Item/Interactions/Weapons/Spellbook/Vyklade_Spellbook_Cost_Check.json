@@ -1,0 +1,37 @@
+{
+  "Type": "StatsCondition",
+  "Failed": "Spellbook_Cast_Fail",
+  "Costs": {
+    "Mana": 26,
+    "Stamina": 0.75
+  },
+  "Next": {
+    "Type": "Parallel",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Replace",
+            "Var": "Spellbook_Cast_Cost",
+            "DefaultOk": true,
+            "DefaultValue": {
+              "Interactions": [
+                "Vyklade_Spellbook_Cast_Cost"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "ChangeStat",
+            "StatModifiers": {
+              "StaminaRegenDelay": -1.2
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

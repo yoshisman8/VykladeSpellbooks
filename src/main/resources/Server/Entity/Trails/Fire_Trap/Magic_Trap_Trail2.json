@@ -1,0 +1,16 @@
+{
+  "TexturePath": "Trails/Basic2.png",
+  "LifeSpan": 10,
+  "Roll": -45,
+  "Start": {
+    "Width": 1.0,
+    "Color": "#2effedff"
+  },
+  "End": {
+    "Width": 0.0,
+    "Color": "#1f8bffff"
+  },
+  "Smooth": false,
+  "RenderMode": "BlendLinear",
+  "LightInfluence": 0.0
+}

@@ -1,0 +1,47 @@
+{
+  "Type": "StatsCondition",
+  "Failed": {
+    "Type": "Charging",
+    "Effects": {
+      "WorldSoundEventId": "SFX_Skeleton_Mage_Spellbook_Charge",
+      "ItemAnimationId": "CastHurlCharging"
+    },
+    "HorizontalSpeedMultiplier": 0.5,
+    "Next": {
+      "0": {
+        "Type": "Chaining",
+        "ChainingAllowance": 1.25,
+        "Next": [
+          "Book_Swing_Left",
+          "Book_Swing_Right",
+          "Book_Swing_Down"
+        ],
+        "Effects": {}
+      },
+      "0.7": {
+        "Type": "Replace",
+        "Var": "Spellbook_Cost_Check",
+        "DefaultOk": true,
+        "DefaultValue": {
+          "Interactions": [
+            "Vyklade_Spellbook_Cost_Check"
+          ]
+        },
+        "CancelOnItemChange": false
+      }
+    }
+  },
+  "Next": {
+    "Type": "Replace",
+    "DefaultOk": true,
+    "Var": "Spellbook_Signature_Config",
+    "DefaultValue": {
+      "Interactions": [
+        "Vyklade_Spellbook_Signature_Spawn"
+      ]
+    }
+  },
+  "Costs": {
+    "DeployablePreview": 1
+  }
+}

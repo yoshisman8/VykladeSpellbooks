@@ -1,0 +1,62 @@
+{
+  "Type": "Parallel",
+  "Interactions": [
+    {
+      "Interactions": [
+        {
+          "Type": "Selector",
+          "HitEntity": {
+            "Interactions": [
+              {
+                "Type": "Replace",
+                "Var": "Spellbook_Attack_Damage",
+                "DefaultOk": true,
+                "DefaultValue": {
+                  "Interactions": [
+                    "Vyklade_Spellbook_Damage"
+                  ]
+                }
+              },
+              {
+                "Type": "ChangeStat",
+                "StatModifiers": {
+                  "SignatureEnergy": 1
+                }
+              }
+            ]
+          },
+          "Selector": {
+            "Id": "Stab",
+            "TestLineOfSight": true,
+            "ExtendTop": 0.6,
+            "ExtendLeft": 0.6,
+            "ExtendRight": 0.6,
+            "ExtendBottom": 0.6,
+            "StartDistance": 0.1,
+            "EndDistance": 13
+          },
+          "IgnoreOwner": true,
+          "RunTime": 0.1
+        }
+      ]
+    },
+    {
+      "Interactions": [
+        {
+          "Type": "LaunchProjectile",
+          "ProjectileId": "Vyklade_Magic_Beam"
+        }
+      ]
+    },
+    {
+      "Interactions": [
+        {
+          "Type": "ModifyInventory",
+          "AdjustHeldItemDurability": -0.33,
+          "RequiredGameMode": "Adventure"
+        }
+      ]
+    }
+  ],
+  "RunTime": 1
+}

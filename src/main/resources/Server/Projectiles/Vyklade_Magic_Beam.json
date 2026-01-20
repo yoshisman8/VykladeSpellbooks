@@ -1,0 +1,19 @@
+{
+  "Appearance": "Vyklade_Spell_Magic_Orb",
+  "PitchAdjustShot": true,
+  "SticksVertically": true,
+  "MuzzleVelocity": 0,
+  "TerminalVelocity": 0,
+  "Gravity": 0,
+  "Damage": 0,
+  "DeathEffectsOnHit": true,
+  "TimeToLive": 0.01,
+  "DeadTimeMiss": 0,
+  "ImpactSlowdown": 0,
+  "DepthShot": 1,
+  "VerticalCenterShot": 0.1,
+  "DeadTime": 0,
+  "Radius": 0,
+  "HorizontalCenterShot": 0,
+  "ComputeYaw": false
+}

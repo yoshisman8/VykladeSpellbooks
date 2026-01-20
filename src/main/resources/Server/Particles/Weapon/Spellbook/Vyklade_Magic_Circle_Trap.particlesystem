@@ -1,0 +1,18 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Vyklade_Magic_Circle_Particle_Trap",
+      "PositionOffset": {
+        "Z": 0.0,
+        "Y": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0
+      },
+      "FixedRotation": true
+    }
+  ],
+  "IsImportant": false,
+  "CullDistance": 100,
+  "LifeSpan": 7
+}

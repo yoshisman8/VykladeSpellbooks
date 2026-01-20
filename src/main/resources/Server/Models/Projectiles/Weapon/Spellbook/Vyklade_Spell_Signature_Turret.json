@@ -1,0 +1,74 @@
+{
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "Items/Animations/Spin_Roll/Spin_Roll_Left.blockyanim",
+          "BlendingDuration": 0
+        }
+      ]
+    },
+    "Loop": {
+      "Animations": [
+        {
+          "Animation": "Items/Animations/Spin_Roll/Spin_Roll_Left.blockyanim",
+          "BlendingDuration": 0
+        }
+      ]
+    },
+    "Shoot": {
+      "Animations": [
+        {
+          "Animation": "Items/Animations/Spin_Roll/Spin_Roll_Left.blockyanim",
+          "BlendingDuration": 0
+        }
+      ]
+    }
+  },
+  "Particles": [
+    {
+      "Color": "#39b8b5",
+      "SystemId": "GreenOrbTrail",
+      "TargetNodeName": "Fireball"
+    },
+    {
+      "Color": "#3990b8",
+      "Scale": 5,
+      "SystemId": "Spectre_Void_Head"
+    }
+  ],
+  "Trails": [
+    {
+      "TrailId": "SkeletonMage",
+      "TargetNodeName": "Origin_Item"
+    },
+    {
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0,
+        "Yaw": 90
+      },
+      "TrailId": "SkeletonMage",
+      "TargetNodeName": "Origin_Item"
+    }
+  ],
+  "DefaultAttachments": [
+    {}
+  ],
+  "Model": "Items/Deployables/Fire_Trap/Fire_Trap.blockymodel",
+  "Light": {
+    "Radius": 5
+  },
+  "HitBox": {
+    "Max": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "Min": {
+      "X": -1,
+      "Y": -1,
+      "Z": -1
+    }
+  }
+}

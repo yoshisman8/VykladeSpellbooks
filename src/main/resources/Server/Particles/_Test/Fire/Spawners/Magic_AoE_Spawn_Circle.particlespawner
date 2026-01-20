@@ -1,0 +1,103 @@
+{
+  "RenderMode": "BlendLinear",
+  "ParticleRotationInfluence": "None",
+  "LinearFiltering": true,
+  "LightInfluence": 0,
+  "ParticleRotateWithSpawner": true,
+  "TrailSpawnerPositionMultiplier": 1.0,
+  "TrailSpawnerRotationMultiplier": 1.0,
+  "MaxConcurrentParticles": 1,
+  "ParticleLifeSpan": {
+    "Min": 6.0,
+    "Max": 6.0
+  },
+  "TotalParticles": {
+    "Min": 1,
+    "Max": 1
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Ring.png",
+    "ScaleRatioConstraint": "OneToOne",
+    "UVOption": "None",
+    "Animation": {
+      "0": {
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Opacity": 1.0,
+        "Color": "#3bfff5",
+        "Scale": {
+          "X": {
+            "Min": 0.0,
+            "Max": 0.0
+          }
+        },
+        "Rotation": {
+          "Z": {
+            "Min": 0.0,
+            "Max": 0.0
+          }
+        }
+      },
+      "10": {
+        "Scale": {
+          "X": {
+            "Min": 1.0,
+            "Max": 1.0
+          }
+        },
+        "Opacity": 1.0
+      },
+      "50": {
+        "Opacity": 1.0,
+        "Rotation": {
+          "Z": {
+            "Min": 200.0,
+            "Max": 200.0
+          }
+        }
+      },
+      "100": {
+        "Opacity": 0.0,
+        "Color": "#3384ff",
+        "Rotation": {
+          "Z": {
+            "Min": 600.0,
+            "Max": 600.0
+          }
+        }
+      }
+    },
+    "InitialAnimationFrame": {
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 0
+      },
+      "Scale": {
+        "X": {
+          "Min": 5.0,
+          "Max": 5.0
+        }
+      },
+      "Rotation": {
+        "Z": {
+          "Min": -360.0,
+          "Max": 360.0
+        },
+        "X": {
+          "Min": 90.0,
+          "Max": 90.0
+        }
+      },
+      "Color": "#ffffff",
+      "Opacity": 1.0
+    },
+    "SoftParticles": "Enable"
+  },
+  "SpawnBurst": true,
+  "SpawnRate": {
+    "Min": 1,
+    "Max": 1
+  }
+}

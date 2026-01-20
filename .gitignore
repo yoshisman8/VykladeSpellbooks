@@ -6,3 +6,13 @@
 /.idea/jarRepositories.xml
 /.idea/misc.xml
 /.idea/vcs.xml
+/target/classes/dev/hytalemodding/ExtendLivingEntityEffectSystem.class
+/target/classes/dev/hytalemodding/HytaleTomes.class
+/target/classes/dev/vyklade/events/VykladeDamageEvent.class
+/target/classes/dev/vyklade/VykladeSpellbooks.class
+/target/classes/manifest.json
+/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/target/HytaleTomes-1.0.jar
+/target/VykladeSpellbooks-1.0.jar
+/target/VykladeSpellbooks-1.1.0.jar

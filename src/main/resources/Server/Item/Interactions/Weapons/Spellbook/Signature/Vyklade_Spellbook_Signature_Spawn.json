@@ -1,0 +1,78 @@
+{
+  "Type": "SpawnDeployableFromRaycast",
+  "Config": {
+    "Type": "Aoe",
+    "Id": "SpellbookSignatureTrap",
+    "Model": "Deployable_Spellbook_Trap",
+    "ModelPreview": "Deployable_Fire_Trap_Preview",
+    "LiveDuration": 5,
+    "Invulnerable": true,
+    "Shape": "Cylinder",
+    "DamageCause": "SignatureMagic",
+    "AttackOwner": false,
+    "AttackTeam": false,
+    "AllowPlaceOnWalls": true,
+    "WireframeDebugVisuals": true,
+    "DebugVisuals": false,
+    "Height": 10,
+    "MaxLiveCount": 3,
+    "StartRadius": 5,
+    "DamageInterval": 2,
+    "AttackEnemies": true,
+    "DamageAmount": 5
+  },
+  "PreviewStatConditions": {
+    "DeployablePreview": 1
+  },
+  "MaxPlacementDistance": 30,
+  "Failed": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "Simple",
+        "RunTime": 0.5
+      },
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "SignatureEnergy": 100
+        },
+        "ValueType": "Percent",
+        "Behaviour": "Set"
+      }
+    ]
+  },
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "DeployablePreview": 0,
+          "SignatureEnergy": 0
+        },
+        "Behaviour": "Set"
+      },
+      {
+        "Type": "TriggerCooldown",
+        "Cooldown": {
+          "Id": "SpellbookSignature",
+          "Cooldown": 20
+        }
+      }
+    ]
+  },
+  "Rules": {
+    "InterruptedBy": [
+      "Secondary"
+    ],
+    "Interrupting": [
+      "Secondary"
+    ]
+  },
+  "Effects": {
+    "WorldSoundEventId": "SFX_Portal_Neutral_Open",
+    "ItemPlayerAnimationsId": "Spellbook",
+    "ItemAnimationId": "CastHurlCharged"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "Model": "Items/Deployables/Fire_Trap/Fire_Trap.blockymodel",
+  "Texture": "Items/Projectiles/Fireball_Textures/Fireball.png",
+  "EyeHeight": 0.9,
+  "CrouchOffset": 0.0,
+  "HitBox": {
+    "Max": {
+      "X": 0.4,
+      "Y": 1.3,
+      "Z": 0.4
+    },
+    "Min": {
+      "X": -0.4,
+      "Y": 0,
+      "Z": -0.4
+    }
+  },
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "Items/Deployables/Fire_Trap/Fire_Trap_Idle.blockyanim",
+          "Speed": 0.4,
+          "Looping": false
+        }
+      ]
+    },
+    "Grow": {
+      "Animations": [
+        {
+          "Animation": "Items/Deployables/Fire_Trap/Fire_Trap_Spin_Grow.blockyanim",
+          "Speed": 0.4,
+          "Looping": false
+        }
+      ]
+    },
+    "Looping": {
+      "Animations": [
+        {
+          "Animation": "Items/Deployables/Fire_Trap/Fire_Trap_Spin_Large.blockyanim",
+          "Speed": 0.4,
+          "Looping": true
+        }
+      ]
+    }
+  },
+  "Trails": [
+    {
+      "TargetNodeName": "GA1",
+      "TrailId": "Magic_Trap_Magic"
+    },
+    {
+      "TargetNodeName": "GA2",
+      "TrailId": "Magic_Trap_Magic"
+    },
+    {
+      "TargetNodeName": "GB1",
+      "TrailId": "Magic_Trap_Magic"
+    },
+    {
+      "TargetNodeName": "GB2",
+      "TrailId": "Magic_Trap_Magic"
+    },
+    {
+      "TargetNodeName": "GA1",
+      "TrailId": "Magic_Trap_Trail2"
+    },
+    {
+      "TargetNodeName": "GA2",
+      "TrailId": "Magic_Trap_Trail2"
+    },
+    {
+      "TargetNodeName": "GB1",
+      "TrailId": "Magic_Trap_Trail2"
+    },
+    {
+      "TargetNodeName": "GB2",
+      "TrailId": "Magic_Trap_Trail2"
+    }
+  ],
+  "Particles": [
+    {
+      "SystemId": "Magic_AoE2",
+      "TargetNodeName": "G1",
+      "Scale": 1.0,
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0.2,
+        "Z": 0
+      }
+    },
+    {
+      "SystemId": "Magic_AoE_Grow2",
+      "TargetNodeName": "G1",
+      "Scale": 1.0,
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0.2,
+        "Z": 0
+      }
+    },
+    {
+      "SystemId": "Magic_AoE_Spawn",
+      "TargetNodeName": "G1",
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0.2,
+        "Z": 0
+      }
+    },
+    {
+      "SystemId": "Vyklade_Magic_Circle_Trap",
+      "TargetNodeName": "G1"
+    }
+  ]
+}

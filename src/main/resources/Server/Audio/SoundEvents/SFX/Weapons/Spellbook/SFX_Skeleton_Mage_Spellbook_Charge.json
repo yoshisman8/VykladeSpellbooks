@@ -1,0 +1,47 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Weapons/Spellbook/Skeleton_Spellbook_Charge_Pages_01.ogg",
+        "Sounds/Weapons/Spellbook/Skeleton_Spellbook_Charge_Pages_02.ogg",
+        "Sounds/Weapons/Spellbook/Skeleton_Spellbook_Charge_Pages_03.ogg"
+      ],
+      "RandomSettings": {
+        "MinVolume": -6.020599913279623,
+        "MinPitch": -3.8631371386483475,
+        "MaxPitch": 3.1564128700055254
+      },
+      "Volume": 1.0
+    },
+    {
+      "Files": [
+        "Sounds/Weapons/Spellbook/Skeleton_Spellbook_Charge_Magic_01.ogg",
+        "Sounds/Weapons/Spellbook/Skeleton_Spellbook_Charge_Magic_02.ogg",
+        "Sounds/Weapons/Spellbook/Skeleton_Spellbook_Charge_Magic_03.ogg"
+      ],
+      "Volume": 6.0,
+      "RandomSettings": {
+        "MinPitch": -1.8240371213405997,
+        "MaxPitch": 1.6500422849992202,
+        "MinVolume": -0.9151498112135024
+      }
+    },
+    {
+      "Files": [
+        "Sounds/Weapons/Unarmed/Player_Punch_Swing_01.ogg",
+        "Sounds/Weapons/Unarmed/Player_Punch_Swing_02.ogg",
+        "Sounds/Weapons/Unarmed/Player_Punch_Swing_03.ogg",
+        "Sounds/Weapons/Unarmed/Player_Punch_Swing_04.ogg"
+      ],
+      "StartDelay": 1,
+      "Volume": -4.0,
+      "RandomSettings": {
+        "MinVolume": -0.9151498112135024,
+        "MinPitch": -1.8240371213405997,
+        "MaxPitch": 1.6500422849992202
+      }
+    }
+  ],
+  "PreventSoundInterruption": false,
+  "Parent": "SFX_Attn_Moderate"
+}

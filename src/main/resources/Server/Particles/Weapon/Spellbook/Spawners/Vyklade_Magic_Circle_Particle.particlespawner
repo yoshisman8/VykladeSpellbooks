@@ -1,0 +1,115 @@
+{
+  "$Comment": "replace later with voidy texture",
+  "RenderMode": "Erosion",
+  "ParticleRotationInfluence": "None",
+  "LinearFiltering": false,
+  "LightInfluence": 0,
+  "MaxConcurrentParticles": 1,
+  "ParticleRotateWithSpawner": true,
+  "SpawnRate": {
+    "Min": 100.0,
+    "Max": 100.0
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Circles/Portal_Runic_128.png",
+    "ScaleRatioConstraint": "None",
+    "Animation": {
+      "0": {
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Opacity": 0,
+        "Scale": {
+          "X": {
+            "Min": 0,
+            "Max": 0
+          },
+          "Y": {
+            "Max": 0,
+            "Min": 0
+          }
+        }
+      },
+      "10": {
+        "Scale": {
+          "X": {
+            "Min": 0.04,
+            "Max": 0.04
+          },
+          "Y": {
+            "Max": 0.04,
+            "Min": 0.04
+          }
+        },
+        "Opacity": 1
+      },
+      "20": {
+        "Scale": {
+          "X": {
+            "Min": 0.04,
+            "Max": 0.04
+          },
+          "Y": {
+            "Max": 0.04,
+            "Min": 0.04
+          }
+        }
+      },
+      "30": {
+        "Opacity": 0,
+        "Rotation": {
+          "Z": {
+            "Min": 360.0,
+            "Max": 360.0
+          }
+        },
+        "Scale": {
+          "X": {
+            "Min": 0,
+            "Max": 0
+          },
+          "Y": {
+            "Max": 0,
+            "Min": 0
+          }
+        }
+      }
+    },
+    "InitialAnimationFrame": {
+      "Opacity": 1.0,
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 0
+      },
+      "Color": "#4cc2ff",
+      "Rotation": {
+        "X": {
+          "Min": 90.0,
+          "Max": 90.0
+        }
+      },
+      "Scale": {
+        "X": {
+          "Min": 3,
+          "Max": 3
+        },
+        "Y": {
+          "Max": 3,
+          "Min": 3
+        }
+      }
+    },
+    "UseSpriteBlending": true
+  },
+  "SpawnBurst": false,
+  "CameraOffset": -0.1,
+  "UVMotion": {
+    "Texture": "Particles/Textures/UVMotion/FlowMap3.png",
+    "SpeedX": 0.08,
+    "Strength": 0.0,
+    "SpeedY": -0.08,
+    "Scale": 1.68
+  },
+  "UseEmitDirection": true
+}

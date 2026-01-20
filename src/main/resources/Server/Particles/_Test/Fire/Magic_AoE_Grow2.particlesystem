@@ -1,0 +1,38 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Magic_AoE_Grow2_Circle",
+      "LifeSpan": {
+        "Min": 4.0,
+        "Max": 4.0
+      },
+      "FixedRotation": true
+    },
+    {
+      "SpawnerId": "Magic_AoE_Grow2_CirclesFloor",
+      "LifeSpan": {
+        "Min": 3.0,
+        "Max": 3.0
+      },
+      "FixedRotation": true
+    },
+    {
+      "SpawnerId": "Magic_AoE_Grow_Sparks",
+      "FixedRotation": false,
+      "LifeSpan": {
+        "Min": 3.0,
+        "Max": 3.0
+      }
+    },
+    {
+      "SpawnerId": "Magic_AoE_Grow_FloorMagic",
+      "LifeSpan": {
+        "Min": 3.0,
+        "Max": 3.0
+      },
+      "FixedRotation": true
+    }
+  ],
+  "BoundingRadius": 10,
+  "IsImportant": true
+}

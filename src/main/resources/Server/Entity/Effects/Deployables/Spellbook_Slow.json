@@ -1,0 +1,12 @@
+{
+  "ApplicationEffects": {
+    "EntityTopTint": "#00beff",
+    "EntityBottomTint": "#00ffff",
+    "HorizontalSpeedMultiplier": 0.25,
+    "LocalSoundEventId": "SFX_Deployable_Totem_Slowing_Effect_Local"
+  },
+  "Duration": 1.0,
+  "OverlapBehavior": "Overwrite",
+  "Debuff": true,
+  "StatusEffectIcon": "UI/StatusEffects/Icon_Slow.png"
+}

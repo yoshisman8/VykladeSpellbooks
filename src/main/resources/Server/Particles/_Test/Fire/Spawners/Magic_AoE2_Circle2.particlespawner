@@ -1,0 +1,72 @@
+{
+  "RenderMode": "BlendLinear",
+  "ParticleRotationInfluence": "None",
+  "LinearFiltering": true,
+  "LightInfluence": 0,
+  "ParticleRotateWithSpawner": true,
+  "TrailSpawnerPositionMultiplier": 1.0,
+  "TrailSpawnerRotationMultiplier": 1.0,
+  "MaxConcurrentParticles": 2,
+  "ParticleLifeSpan": {
+    "Min": 1.0,
+    "Max": 1.0
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Ball.png",
+    "ScaleRatioConstraint": "OneToOne",
+    "UVOption": "None",
+    "Animation": {
+      "0": {
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Opacity": 0.0,
+        "Color": "#021e25",
+        "Scale": {
+          "X": {
+            "Min": 1.0,
+            "Max": 1.0
+          }
+        }
+      },
+      "100": {
+        "Opacity": 0.0
+      },
+      "50": {
+        "Opacity": 1.0
+      }
+    },
+    "InitialAnimationFrame": {
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 0
+      },
+      "Scale": {
+        "X": {
+          "Min": 5.0,
+          "Max": 5.0
+        }
+      },
+      "Color": "#ffffff",
+      "Opacity": 0.948,
+      "Rotation": {
+        "X": {
+          "Min": 90.0,
+          "Max": 90.0
+        }
+      }
+    },
+    "SoftParticles": "Disable"
+  },
+  "SpawnBurst": true,
+  "SpawnRate": {
+    "Min": 1,
+    "Max": 1
+  },
+  "CameraOffset": -0.1,
+  "WaveDelay": {
+    "Min": 0.5,
+    "Max": 0.5
+  }
+}

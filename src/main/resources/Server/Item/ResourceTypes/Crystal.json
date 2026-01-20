@@ -1,0 +1,12 @@
+{
+  "Name": "Any Crystal",
+  "Icon": "Icons/ResourceTypes/Any_Rubble.png",
+  "Tags": {
+    "Type": [
+      "Ingredient"
+    ],
+    "Family": [
+      "Crystal"
+    ]
+  }
+}

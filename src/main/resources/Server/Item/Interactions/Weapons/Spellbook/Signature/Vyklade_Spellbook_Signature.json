@@ -1,0 +1,13 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "SignatureEnergy": 12
+  },
+  "Next": {
+    "Type": "ChangeStat",
+    "StatModifiers": {
+      "DeployablePreview": 1
+    },
+    "Behaviour": "Set"
+  }
+}

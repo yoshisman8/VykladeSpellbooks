@@ -1,0 +1,33 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Magic_AoE_Spawn_Flash"
+    },
+    {
+      "SpawnerId": "Magic_AoE_Spawn_Sparks",
+      "FixedRotation": false,
+      "PositionOffset": {
+        "Y": 0.2
+      }
+    },
+    {
+      "SpawnerId": "Magic_AoE_Spawn_Spawn2",
+      "PositionOffset": {
+        "Y": 0.2
+      }
+    },
+    {
+      "SpawnerId": "Magic_AoE_Spawn_Spawn",
+      "PositionOffset": {
+        "Y": 0.2
+      }
+    },
+    {
+      "SpawnerId": "Magic_AoE_Spawn_Circle",
+      "FixedRotation": true,
+      "StartDelay": 0.1
+    }
+  ],
+  "BoundingRadius": 10,
+  "IsImportant": true
+}

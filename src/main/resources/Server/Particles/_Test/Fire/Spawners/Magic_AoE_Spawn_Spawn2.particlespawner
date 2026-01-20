@@ -1,0 +1,133 @@
+{
+  "RenderMode": "Erosion",
+  "ParticleRotationInfluence": "BillboardVelocity",
+  "LinearFiltering": false,
+  "LightInfluence": 0.0,
+  "ParticleRotateWithSpawner": true,
+  "TrailSpawnerPositionMultiplier": 0.528,
+  "TrailSpawnerRotationMultiplier": 0.508,
+  "MaxConcurrentParticles": 100,
+  "ParticleLifeSpan": {
+    "Min": 0.3,
+    "Max": 0.4
+  },
+  "SpawnRate": {
+    "Min": 30.0,
+    "Max": 30.0
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Fire/Fire_Small.png",
+    "FrameSize": {
+      "Width": 32,
+      "Height": 32
+    },
+    "ScaleRatioConstraint": "None",
+    "SoftParticles": "Require",
+    "Animation": {
+      "0": {
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 3
+        },
+        "Scale": {
+          "X": {
+            "Min": 0.5,
+            "Max": 0.5
+          },
+          "Y": {
+            "Min": 0.5,
+            "Max": 0.5
+          }
+        },
+        "Opacity": 0.0,
+        "Color": "#2fe4ff"
+      },
+      "20": {
+        "Opacity": 1.0,
+        "Scale": {
+          "X": {
+            "Min": 1.0,
+            "Max": 1.0
+          },
+          "Y": {
+            "Min": 1.0,
+            "Max": 1.0
+          }
+        },
+        "Color": "#2fd9ff"
+      },
+      "50": {},
+      "80": {
+        "Scale": {
+          "X": {
+            "Min": 0.5,
+            "Max": 0.8
+          },
+          "Y": {
+            "Min": 1.2,
+            "Max": 1.5
+          }
+        },
+        "Color": "#0086ff"
+      },
+      "100": {
+        "Opacity": 0.0,
+        "Color": "#11a1ff"
+      }
+    },
+    "InitialAnimationFrame": {
+      "Opacity": 0.892,
+      "Color": "#ffffff",
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 3
+      },
+      "Scale": {
+        "X": {
+          "Min": 0.3,
+          "Max": 0.5
+        },
+        "Y": {
+          "Min": 0.3,
+          "Max": 0.6
+        }
+      },
+      "Rotation": {
+        "Z": {
+          "Min": -180.0,
+          "Max": -180.0
+        }
+      }
+    }
+  },
+  "SpawnBurst": true,
+  "InitialVelocity": {
+    "Speed": {
+      "Min": 2.0,
+      "Max": 15.0
+    },
+    "Pitch": {
+      "Min": 0.0,
+      "Max": 0.0
+    },
+    "Yaw": {
+      "Max": 360.0
+    }
+  },
+  "EmitOffset": {
+    "X": {
+      "Max": 0.1
+    },
+    "Y": {
+      "Max": 0.1
+    },
+    "Z": {
+      "Max": 0.1
+    }
+  },
+  "UseEmitDirection": false,
+  "TotalParticles": {
+    "Min": 30,
+    "Max": 30
+  }
+}

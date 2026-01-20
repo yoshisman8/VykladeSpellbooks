@@ -1,20 +1,17 @@
 {
-  "Group": "dev.hytalemodding",
-  "Name": "ExamplePlugin",
-  "Version": "1.0.0",
-  "Description": "Description of your plugin",
+  "Group": "Vyklade",
+  "Name": "Vyklade's Spellbooks",
+  "Version": "1.1.0",
+  "Description": "Implements Spellbooks to the game!",
   "Authors": [
     {
-      "Name": "Your Name",
-      "Email": "your.email@example.com",
-      "Url": "https://your-website.com"
+      "Name": "Vyklade"
     }
   ],
-  "Website": "https://your-plugin-website.com",
   "ServerVersion": "*",
   "Dependencies": {},
   "OptionalDependencies": {},
   "DisabledByDefault": false,
   "IncludesAssetPack": false,
-  "Main": "dev.hytalemodding.ExamplePlugin"
+  "Main": "dev.vyklade.VykladeSpellbooks"
 }

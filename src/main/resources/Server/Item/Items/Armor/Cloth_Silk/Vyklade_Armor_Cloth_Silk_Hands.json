@@ -45,6 +45,13 @@
           "Arcane_Gloves"
         ],
         "RequiredTierLevel": 2
+      },{
+        "Id": "UMT_Loombench",
+        "Type": "Crafting",
+        "Categories": [
+          "Arcane_Gloves"
+        ],
+        "RequiredTierLevel": 2
       }
     ],
     "KnowledgeRequired": false

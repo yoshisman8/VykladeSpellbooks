@@ -44,6 +44,12 @@
         "Categories": [
           "Arcane_Pants"
         ]
+      },{
+        "Id": "UMT_Loombench",
+        "Type": "Crafting",
+        "Categories": [
+          "Arcane_Pants"
+        ]
       }
     ],
     "KnowledgeRequired": false

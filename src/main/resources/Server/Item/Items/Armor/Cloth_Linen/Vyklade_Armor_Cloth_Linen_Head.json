@@ -44,6 +44,12 @@
         "Categories": [
           "Arcane_Hoods"
         ]
+      },{
+        "Id": "UMT_Loombench",
+        "Type": "Crafting",
+        "Categories": [
+          "Arcane_Hoods"
+        ]
       }
     ],
     "KnowledgeRequired": false

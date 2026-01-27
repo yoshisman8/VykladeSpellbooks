@@ -40,6 +40,12 @@
         "Categories": [
           "Arcane_Tunics"
         ]
+      },{
+        "Id": "UMT_Loombench",
+        "Type": "Crafting",
+        "Categories": [
+          "Arcane_Tunics"
+        ]
       }
     ],
     "KnowledgeRequired": false

@@ -45,6 +45,13 @@
           "Arcane_Tunics"
         ],
         "RequiredTierLevel": 3
+      },{
+        "Id": "UMT_Loombench",
+        "Type": "Crafting",
+        "Categories": [
+          "Arcane_Tunics"
+        ],
+        "RequiredTierLevel": 3
       }
     ],
     "KnowledgeRequired": false

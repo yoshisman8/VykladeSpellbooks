@@ -45,6 +45,13 @@
           "Arcane_Pants"
         ],
         "RequiredTierLevel": 2
+      },{
+        "Id": "UMT_Loombench",
+        "Type": "Crafting",
+        "Categories": [
+          "Arcane_Pants"
+        ],
+        "RequiredTierLevel": 2
       }
     ],
     "KnowledgeRequired": false

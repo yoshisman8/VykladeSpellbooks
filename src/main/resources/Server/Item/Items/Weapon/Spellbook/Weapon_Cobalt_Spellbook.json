@@ -9,7 +9,7 @@
   "Icon": "Icons/ItemsGenerated/Weapon_Cobalt_Spellbook.png",
   "Quality": "Rare",
   "ItemLevel": 50,
-  "Model": "Items/Weapons/Spellbook/Frost.blockymodel",
+  "Model": "Items/Weapons/Spellbook/Weapon_Cobalt_Spellbook.blockymodel",
   "Texture": "Items/Weapons/Spellbook/Weapon_Cobalt_Spellbook.png",
   "IconProperties": {
     "Scale": 0.7,

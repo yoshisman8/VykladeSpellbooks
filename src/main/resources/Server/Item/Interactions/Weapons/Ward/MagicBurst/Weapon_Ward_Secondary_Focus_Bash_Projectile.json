@@ -1,0 +1,25 @@
+{
+  "Type": "Projectile",
+  "Config": "Vyklade_Ward_Magic_Burst",
+  "Effects": {
+    "ItemAnimationId": "FocusBash",
+    "WorldSoundEventId": "SFX_Staff_Flame_Trap_Deploy",
+    "CameraEffect": "Sword_Bash",
+    "Particles": [
+      {
+        "TargetEntityPart": "Entity",
+        "SystemId": "Vyklade_Magic_Circle_Pulse",
+        "TargetNodeName": "Origin",
+        "PositionOffset": {
+          "Y": 1.5,
+          "Z": 2
+        },
+        "RotationOffset": {
+          "Pitch": 90
+        },
+        "Scale": 0.2
+      }
+    ]
+  },
+  "RunTime": 1
+}

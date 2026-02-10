@@ -1,0 +1,23 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "WardFocus": 1,
+    "Stamina": -0.5
+  },
+  "LessThan": false,
+  "Next": {
+    "Type": "Replace",
+    "DefaultOk": true,
+    "DefaultValue": {
+      "Interactions": [
+        "Weapon_Ward_Charge"
+      ]
+    },
+    "Var": "Spellbook_Held_Config"
+  },
+  "Failed": {
+    "Type": "ClearEntityEffect",
+    "EntityEffectId": "Weapon_Grimoire_Mana_Focus",
+    "Entity": "Owner"
+  }
+}

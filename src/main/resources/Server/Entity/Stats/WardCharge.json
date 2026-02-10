@@ -1,0 +1,54 @@
+{
+  "Min": 0,
+  "Max": 2,
+  "InitialValue": 0,
+  "IgnoreInvulnerability": true,
+  "MaxValueEffects": {
+    "SoundEventId": "SFX_WardCharge",
+    "Interactions": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "Effects": {
+            "Particles": [
+              {
+                "TargetEntityPart": "SecondaryItem",
+                "SystemId": "Ward_Charge_Charging_Constant",
+                "PositionOffset": {
+                  "Z": 0,
+                  "X": 0,
+                  "Y": -0.2
+                },
+                "Scale": 1.2
+              },
+              {
+                "SystemId": "Vyklade_Magic_Circle_Shield",
+                "TargetNodeName": "Origin",
+                "Scale": 1,
+                "RotationOffset": {
+                  "Pitch": 90
+                },
+                "PositionOffset": {
+                  "Y": 1.5,
+                  "Z": 1
+                },
+                "TargetEntityPart": "Entity"
+              },
+              {
+                "TargetEntityPart": "Entity",
+                "SystemId": "Vyklade_Magic_Gather",
+                "TargetNodeName": "Origin",
+                "RotationOffset": {
+                  "Pitch": 90
+                },
+                "PositionOffset": {
+                  "Y": 0.1
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

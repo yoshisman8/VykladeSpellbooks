@@ -1,0 +1,23 @@
+{
+  "Regenerating": [
+    {
+      "Interval": 0.25,
+      "Amount": -0.25,
+      "Conditions": [
+        {
+          "Id": "Charging",
+          "Inverse": true
+        },
+        {
+          "Id": "Alive"
+        }
+      ],
+      "RegenType": "Additive",
+      "ClampAtZero": false
+    }
+  ],
+  "Min": 0,
+  "Max": 10,
+  "InitialValue": 0,
+  "IgnoreInvulnerability": true
+}

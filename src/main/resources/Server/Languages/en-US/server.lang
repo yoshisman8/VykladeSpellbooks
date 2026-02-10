@@ -31,3 +31,9 @@ items.Vyklade_Armor_Cloth_Linen.description= Breathable linen robes that offer m
 items.Vyklade_Armor_Cloth_Cotton.description= Comfortable and soft clothing that improves mana efficiency to boot!\n\nModerately improves <color is="#0096ff">Mana Recovery</color>\nGrants minor <color is="#DE205C">Health Regeneration</color>. 
 items.Vyklade_Armor_Cloth_Silk.description= Silky soft robes that feel wonderful to the touch and improves mana efficiency to boot!\n\nModerately improves <color is="#0096ff">Mana Recovery</color>\nMinorly improves <color is="#E2AB4B">Stamina Regeneration</color>. 
 items.Vyklade_Armor_Cloth_Cindercloth.description= Mystical robes made from infernal material. It flows with power beyond comprehension.\n\nGreatly improves <color is="#0096ff">Mana Recovery</color>. 
+
+items.Weapons.Template_Ward.name= Template Ward
+items.Weapons.Template_Ward.description= You're not supposed to have this!
+
+items.Weapons.Copper_Ward.name= Kweebec's Generosity
+item.Weapons.Copper_Ward.description= A ward fashioned after the peaceful Kweebecs. Holding makes you feel closer to nature, you can almost hear the grass whispering secrets to you.\n\nAllows the user to <color is="#B5A077">Ward</color>; Draining <color is="#E2AB4B">Stamina</color> and recovering <color is="#0096ff">Mana</color>.\n\n<color is="#ffffff">Magic Burst Statistics</color>\n    <color is="#B5A077">Mana Cost:</color> 15            <color is="#B5A077">Damage:</color> 8\n    <color is="#B5A077">Charge Time:</color> 1.3s      <color is="#B5A077">Charged Damage:</color> 14\n<color is="#ffffff">Charged Magic Burst Effect</color>\n    Recovers 7% <color is="#DE205C">Health</color> on hit.

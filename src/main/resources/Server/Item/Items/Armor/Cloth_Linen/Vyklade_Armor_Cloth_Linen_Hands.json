@@ -38,19 +38,6 @@
       }
     ],
     "BenchRequirement": [
-      {
-        "Id": "Arcanebench",
-        "Type": "Crafting",
-        "Categories": [
-          "Arcane_Gloves"
-        ]
-      },{
-        "Id": "UMT_Loombench",
-        "Type": "Crafting",
-        "Categories": [
-          "Arcane_Gloves"
-        ]
-      }
     ],
     "KnowledgeRequired": false
   },

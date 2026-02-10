@@ -1,0 +1,82 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "ApplyEffect",
+      "EffectId": "Stamina_Broken_Immune"
+    },
+    {
+      "Type": "StatsCondition",
+      "Costs": {
+        "Mana": 15
+      },
+      "Next": {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "Mana": -15,
+          "StaminaRegenDelay": -1.5
+        },
+        "Next": {
+          "Type": "StatsCondition",
+          "Costs": {
+            "WardCharge": 2
+          },
+          "Failed": {
+            "Type": "Serial",
+            "Interactions": [
+              {
+                "Type": "ChangeStat",
+                "StatModifiers": {
+                  "WardFocus": 0,
+                  "WardCharge": 0
+                },
+                "Behaviour": "Set"
+              },
+              {
+                "Type": "ClearEntityEffect",
+                "EntityEffectId": "Weapon_Ward_Mana_Focus"
+              },
+              {
+                "Type": "Replace",
+                "Var": "Magic_Burst_Projectile",
+                "DefaultOk": true,
+                "DefaultValue": {
+                  "Interactions": [
+                    "Weapon_Ward_Secondary_Focus_Bash_Projectile"
+                  ]
+                }
+              }
+            ]
+          },
+          "Next": {
+            "Type": "Serial",
+            "Interactions": [
+              {
+                "Type": "ChangeStat",
+                "StatModifiers": {
+                  "WardFocus": 0,
+                  "WardCharge": 0
+                },
+                "Behaviour": "Set"
+              },
+              {
+                "Type": "ClearEntityEffect",
+                "EntityEffectId": "Weapon_Ward_Mana_Focus"
+              },
+              {
+                "Type": "Replace",
+                "Var": "Magic_Burst_Projectile_Charged",
+                "DefaultOk": true,
+                "DefaultValue": {
+                  "Interactions": [
+                    "Weapon_Ward_Secondary_Focus_Bash_Projectile"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

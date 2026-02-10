@@ -21,11 +21,6 @@
     "Id": "AOECircle",
     "Range": 5
   },
-  "HitBlock": {
-    "Interactions": [
-      "Block_Break_Adventure"
-    ]
-  },
   "HitEntity": {
     "Interactions": [
       {

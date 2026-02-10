@@ -1,0 +1,25 @@
+{
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Rules": {
+    "Interrupting": [
+      "Primary"
+    ]
+  },
+  "RequireNewClick": true,
+  "Interactions": [
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Ward_Focus_Start",
+      "DefaultValue": {
+        "Interactions": [
+          "Weapon_Ward_Secondary_Focus"
+        ]
+      }
+    }
+  ]
+}

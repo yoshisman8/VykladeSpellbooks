@@ -1,0 +1,108 @@
+{
+  "RenderMode": "Erosion",
+  "EmitOffset": {
+    "X": {
+      "Min": 0.3,
+      "Max": 0.3
+    },
+    "Y": {
+      "Min": 0.3,
+      "Max": 0.3
+    },
+    "Z": {
+      "Min": 0.3,
+      "Max": 0.3
+    }
+  },
+  "ParticleRotationInfluence": "Billboard",
+  "MaxConcurrentParticles": 50,
+  "ParticleLifeSpan": {
+    "Min": 0.15,
+    "Max": 0.3
+  },
+  "ParticleRotateWithSpawner": true,
+  "TrailSpawnerPositionMultiplier": 1,
+  "TrailSpawnerRotationMultiplier": 1,
+  "SpawnRate": {
+    "Min": 50.0,
+    "Max": 100.0
+  },
+  "Attractors": [
+    {
+      "Position": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "Radius": 0,
+      "RadialAcceleration": -5.0,
+      "DampingMultiplier": {
+        "X": 0.85,
+        "Y": 0.85,
+        "Z": 0.85
+      },
+      "RadialTangentAcceleration": 2.0
+    }
+  ],
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Ball3.png",
+    "FrameSize": {
+      "Width": 32,
+      "Height": 32
+    },
+    "ScaleRatioConstraint": "OneToOne",
+    "UVOption": "RandomFlipU",
+    "Animation": {
+      "0": {
+        "Opacity": 0.0,
+        "Color": "#b8ffec",
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          },
+          "Y": {
+            "Min": 1.0,
+            "Max": 1.0
+          }
+        }
+      },
+      "20": {
+        "Opacity": 0.965,
+        "Color": "#00ffff"
+      },
+      "80": {
+        "Color": "#006bff",
+        "Opacity": 1.0
+      },
+      "100": {
+        "Color": "#00bcff",
+        "Opacity": 0.0
+      }
+    },
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 0.05,
+          "Max": 0.1
+        }
+      },
+      "Opacity": 0.5,
+      "Color": "#ffffff",
+      "Rotation": {
+        "X": {
+          "Max": 180.0
+        },
+        "Y": {
+          "Max": 180.0
+        },
+        "Z": {
+          "Max": 180.0
+        }
+      }
+    }
+  },
+  "LinearFiltering": true,
+  "UseEmitDirection": false,
+  "SpawnBurst": false
+}

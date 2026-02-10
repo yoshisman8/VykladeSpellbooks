@@ -1,0 +1,47 @@
+{
+  "Model": "Skeleton_Mage_Corruption_Orb",
+  "LaunchForce": 50,
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "Var": "Ward_Magic_Burst",
+          "DefaultValue": {
+            "Interactions": [
+              "Weapon_Ward_Secondary_Focus_Bash_Damage"
+            ]
+          },
+          "DefaultOk": true
+        },
+        "Common_Projectile_Despawn",
+        {
+          "Type": "Replace",
+          "Var": "Magic_Burst_Effect",
+          "DefaultValue": {
+            "Interactions": [
+              "Weapon_Ward_Magic_Burst_Base"
+            ]
+          },
+          "DefaultOk": true
+        }
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        {
+          "Type": "RemoveEntity"
+        }
+      ]
+    }
+  },
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 0,
+    "TerminalVelocityAir": 50,
+    "TerminalVelocityWater": 15,
+    "RotationMode": "VelocityDamped",
+    "Bounciness": 0.0,
+    "SticksVertically": true
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "RenderMode": "BlendAdd",
+  "ParticleRotationInfluence": "Billboard",
+  "MaxConcurrentParticles": 1,
+  "ParticleLifeSpan": {
+    "Min": 0.3,
+    "Max": 0.3
+  },
+  "SpawnRate": {
+    "Min": 1.0,
+    "Max": 1.0
+  },
+  "LinearFiltering": true,
+  "Particle": {
+    "ScaleRatioConstraint": "OneToOne",
+    "Animation": {
+      "0": {
+        "Opacity": 0.0,
+        "Color": "#59dcff",
+        "Rotation": {
+          "X": {
+            "Min": 0,
+            "Max": 0
+          },
+          "Y": {
+            "Min": 0,
+            "Max": 0
+          },
+          "Z": {
+            "Min": 0,
+            "Max": 0
+          }
+        },
+        "Scale": {
+          "X": {
+            "Min": 1.0,
+            "Max": 1.0
+          }
+        }
+      },
+      "40": {
+        "Opacity": 1.0
+      },
+      "75": {
+        "Opacity": 0.8
+      },
+      "100": {
+        "Opacity": 0.0,
+        "Color": "#003396",
+        "Scale": {
+          "X": {
+            "Min": 0.2,
+            "Max": 0.2
+          }
+        }
+      }
+    },
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 0.24,
+          "Max": 0.25
+        }
+      },
+      "Opacity": 1.0
+    },
+    "Texture": "Particles/Textures/Circles/Circle_Glow.png",
+    "FrameSize": {
+      "Height": 0
+    }
+  },
+  "SpawnBurst": true,
+  "ParticleRotateWithSpawner": true,
+  "WaveDelay": {
+    "Min": 0.3,
+    "Max": 0.5
+  }
+}

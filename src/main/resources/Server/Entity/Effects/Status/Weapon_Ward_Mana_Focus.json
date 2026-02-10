@@ -1,0 +1,11 @@
+{
+  "OverlapBehavior": "Overwrite",
+  "StatModifiers": {
+    "Mana": 3.5,
+    "Stamina": -2,
+    "WardCharge": 35
+  },
+  "ValueType": "Percent",
+  "Duration": 0.3,
+  "DamageCalculatorCooldown": 0.25
+}

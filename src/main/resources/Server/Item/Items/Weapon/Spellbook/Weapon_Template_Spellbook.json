@@ -7,7 +7,7 @@
     "Items.Weapons"
   ],
   "Icon": "Icons/ItemsGenerated/Weapon_Copper_Spellbook.png",
-  "Quality": "Debug",
+  "Quality": "Template",
   "ItemLevel": 0,
   "Model": "Items/Weapons/Spellbook/Grimoire.blockymodel",
   "Texture": "Items/Weapons/Spellbook/Weapon_Copper_Spellbook.png",
@@ -141,7 +141,7 @@
   },
   "RenderDeployablePreview": true,
   "ItemAppearanceConditions": {
-    "SignatureCharges": [
+    "SignatureEnergy": [
       {
         "Condition": [
           100,
@@ -150,37 +150,12 @@
         "ConditionValueType": "Percent",
         "Particles": [
           {
-            "SystemId": "Sword_Signature_Ready",
+            "SystemId": "Daggers_Signature_Ready",
             "TargetNodeName": "Handle",
             "PositionOffset": {
-              "X": 0.8
-            },
-            "TargetEntityPart": "PrimaryItem"
-          },
-          {
-            "SystemId": "Sword_Signature_Status_Spawn",
-            "TargetNodeName": "Handle",
-            "PositionOffset": {
-              "X": 0.5
-            },
-            "TargetEntityPart": "PrimaryItem"
-          },
-          {
-            "SystemId": "Sword_Signature_Status",
-            "TargetNodeName": "Handle",
-            "PositionOffset": {
-              "X": 0.55
-            },
-            "TargetEntityPart": "PrimaryItem",
-            "Scale": 1.3
-          }
-        ],
-        "FirstPersonParticles": [
-          {
-            "SystemId": "Sword_Signature_Ready",
-            "TargetNodeName": "Handle",
-            "PositionOffset": {
-              "X": 0.8
+              "X": 0.2,
+              "Y": 0,
+              "Z": -0.2
             },
             "TargetEntityPart": "PrimaryItem"
           },
@@ -188,20 +163,41 @@
             "SystemId": "Sword_Signature_Status_Spawn",
             "TargetNodeName": "Handle",
             "TargetEntityPart": "PrimaryItem",
-            "PositionOffset": {
-              "Y": -100
+            "Scale": 0.7,
+            "RotationOffset": {
+              "Yaw": 90
             }
           },
           {
-            "SystemId": "Sword_Signature_Status",
+            "SystemId": "Dagger_Signature_Status",
+            "TargetNodeName": "Handle",
+            "TargetEntityPart": "PrimaryItem",
+            "RotationOffset": {
+              "Pitch": 0,
+              "Roll": 0,
+              "Yaw": 90
+            }
+          }
+        ],
+        "ModelVFXId": "Spellbook_Signature_Status",
+        "FirstPersonParticles": [
+          {
+            "SystemId": "Daggers_Signature_Ready",
             "TargetNodeName": "Handle",
             "PositionOffset": {
               "X": 0.5
             },
             "TargetEntityPart": "PrimaryItem"
+          },
+          {
+            "SystemId": "Dagger_Signature_Status",
+            "TargetNodeName": "Handle",
+            "TargetEntityPart": "PrimaryItem",
+            "RotationOffset": {
+              "Yaw": 90
+            }
           }
-        ],
-        "ModelVFXId": "Sword_Signature_Status"
+        ]
       }
     ]
   }

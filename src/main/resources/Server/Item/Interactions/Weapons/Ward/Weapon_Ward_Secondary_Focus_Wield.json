@@ -1,0 +1,156 @@
+{
+  "Type": "Wielding",
+  "Effects": {
+    "ItemAnimationId": "Focus",
+    "ClearAnimationOnFinish": true,
+    "WorldSoundEventId": "SFX_Focus_Hold",
+    "Particles": [
+      {
+        "SystemId": "Vyklade_Magic_Circle_Shield",
+        "TargetNodeName": "Origin",
+        "Scale": 1,
+        "RotationOffset": {
+          "Pitch": 90
+        },
+        "PositionOffset": {
+          "Y": 1.5,
+          "Z": 1
+        },
+        "TargetEntityPart": "Entity"
+      },
+      {
+        "TargetEntityPart": "Entity",
+        "SystemId": "Vyklade_Magic_Gather",
+        "TargetNodeName": "Origin",
+        "RotationOffset": {
+          "Pitch": 90
+        },
+        "PositionOffset": {
+          "Y": 0.1
+        }
+      }
+    ],
+    "ClearSoundEventOnFinish": true
+  },
+  "Forks": {
+    "Primary": {
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "Var": "Ward_Magic_Burst",
+          "DefaultOk": true,
+          "DefaultValue": {
+            "Interactions": [
+              "Weapon_Ward_Secondary_Focus_Bash"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "AngledWielding": {
+    "Angle": 0,
+    "DamageModifiers": {
+      "Physical": 0,
+      "Projectile": 0,
+      "Poison": 0
+    },
+    "KnockbackModifiers": {
+      "Physical": 0.25,
+      "Projectile": 0.25
+    },
+    "AngleDistance": 360
+  },
+  "CancelOnOtherClick": true,
+  "Failed": {
+    "Type": "Replace",
+    "Var": "Guard_Break",
+    "DefaultOk": true,
+    "DefaultValue": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Shield_Shatter"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Light_Melee_T2_Guard_Break",
+            "LocalSoundEventId": "SFX_Light_Melee_T2_Guard_Break"
+          }
+        }
+      ]
+    }
+  },
+  "BlockedEffects": {
+    "WorldSoundEventId": "SFX_Light_Melee_T2_Guard_Hit",
+    "WorldParticles": [
+      {
+        "SystemId": "Shield_Block",
+        "Color": "#0bdde3"
+      }
+    ]
+  },
+  "Next": {
+    "$Comment": "Standard regen delay upon ending guarding on all weapons",
+    "Type": "ChangeStat",
+    "Behaviour": "Set",
+    "StatModifiers": {
+      "StaminaRegenDelay": -0.5,
+      "WardFocus": 0,
+      "WardCharge": 0
+    },
+    "Next": {
+      "Type": "ClearEntityEffect",
+      "EntityEffectId": "Weapon_Ward_Mana_Focus"
+    }
+  },
+  "BlockedInteractions": {
+    "Interactions": [
+      {
+        "Type": "StatsCondition",
+        "Costs": {
+          "Mana": 15
+        },
+        "Next": {
+          "Type": "ChangeStat",
+          "StatModifiers": {
+            "Mana": -15
+          }
+        },
+        "Failed": {
+          "Type": "Replace",
+          "Var": "Guard_Break",
+          "DefaultOk": true,
+          "DefaultValue": {
+            "Interactions": [
+              {
+                "Type": "Simple",
+                "Effects": {
+                  "Particles": [
+                    {
+                      "SystemId": "Shield_Shatter"
+                    }
+                  ],
+                  "WorldSoundEventId": "SFX_Light_Melee_T2_Guard_Break",
+                  "LocalSoundEventId": "SFX_Light_Melee_T2_Guard_Break"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "StaminaCost": {
+    "Value": 1,
+    "CostType": "MaxHealthPercentage"
+  },
+  "HorizontalSpeedMultiplier": 0.5,
+  "Rules": {
+    "InterruptedBy": [
+      "Primary"
+    ]
+  }
+}

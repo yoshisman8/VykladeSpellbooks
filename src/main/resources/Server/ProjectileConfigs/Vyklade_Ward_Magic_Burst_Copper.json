@@ -1,0 +1,36 @@
+{
+  "Model": "Skeleton_Mage_Corruption_Orb",
+  "LaunchForce": 50,
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "DamageEntity",
+          "Parent": "Weapon_Ward_Secondary_Focus_Bash_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Projectile": 8
+            }
+          }
+        },
+        "Common_Projectile_Despawn"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        {
+          "Type": "RemoveEntity"
+        }
+      ]
+    }
+  },
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 0,
+    "TerminalVelocityAir": 50,
+    "TerminalVelocityWater": 15,
+    "RotationMode": "VelocityDamped",
+    "Bounciness": 0.0,
+    "SticksVertically": true
+  }
+}

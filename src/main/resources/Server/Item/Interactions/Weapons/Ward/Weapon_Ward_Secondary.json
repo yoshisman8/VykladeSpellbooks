@@ -1,0 +1,58 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Stamina": 0.5
+  },
+  "Next": {
+    "Type": "EffectCondition",
+    "EntityEffectIds": [
+      "Stamina_Broken"
+    ],
+    "Match": "None",
+    "Next": {
+      "Type": "Serial",
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "Var": "Guard_Start_StaminaCost",
+          "DefaultOk": true,
+          "DefaultValue": {
+            "Interactions": [
+              {
+                "Type": "ChangeStat",
+                "StatModifiers": {
+                  "Stamina": -0.5
+                }
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Replace",
+          "Var": "Guard_Wield",
+          "DefaultOk": true,
+          "DefaultValue": {
+            "Interactions": [
+              "Weapon_Sword_Secondary_Guard_Wield"
+            ]
+          }
+        }
+      ]
+    },
+    "Failed": {
+      "Type": "Replace",
+      "Var": "Guard_Stamina_Insufficient",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "Common_Stamina_Insufficient"
+        ]
+      }
+    }
+  },
+  "Effects": {
+    "ItemPlayerAnimationsId": "Spellbook",
+    "ItemAnimationId": "Guard",
+    "LocalSoundEventId": "SFX_Emit_Wind_Gusts"
+  }
+}

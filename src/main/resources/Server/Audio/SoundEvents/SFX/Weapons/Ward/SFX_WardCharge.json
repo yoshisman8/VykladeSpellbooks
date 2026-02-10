@@ -1,0 +1,12 @@
+{
+  "AudioCategory": "AudioCat_Weapons",
+  "Parent": "SFX_Attn_Moderate",
+  "Volume": 4,
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Magic/Portals/Portal_Open_01.ogg"
+      ]
+    }
+  ]
+}

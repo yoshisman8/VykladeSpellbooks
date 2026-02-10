@@ -1,0 +1,15 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Ward_Charge_Charging_Constant1"
+    },
+    {
+      "SpawnerId": "Ward_Charge_Charging_Constant2"
+    },
+    {
+      "SpawnerId": "Ward_Charge_Charging_Constant3"
+    }
+  ],
+  "CullDistance": 30.0,
+  "IsImportant": false
+}

@@ -1,0 +1,765 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "name": "L-Forearm",
+      "position": {"x": -18.75, "y": 9, "z": -1.5},
+      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+      "shape": {
+        "type": "none",
+        "offset": {"x": 0, "y": 0, "z": 0},
+        "stretch": {"x": 0, "y": 0, "z": 0},
+        "settings": {
+          "isPiece": true
+        },
+        "textureLayout": {},
+        "unwrapMode": "custom",
+        "visible": true,
+        "doubleSided": false,
+        "shadingMode": "flat"
+      },
+      "children": [
+        {
+          "id": "2",
+          "name": "Origin_Projectile",
+          "position": {"x": 10.25765, "y": -4.51801, "z": -0.64467},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "shape": {
+            "type": "none",
+            "offset": {"x": 0, "y": 0, "z": 0},
+            "stretch": {"x": 0, "y": 0, "z": 0},
+            "settings": {
+              "isPiece": true
+            },
+            "textureLayout": {},
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          },
+          "children": [
+            {
+              "id": "3",
+              "name": "Origin_Item",
+              "position": {"x": -9.439, "y": 3.94628, "z": -0.33097},
+              "orientation": {"x": 0.70711, "y": 0, "z": 0, "w": 0.70711},
+              "shape": {
+                "type": "none",
+                "offset": {"x": 0, "y": 0, "z": 0},
+                "stretch": {"x": 0, "y": 0, "z": 0},
+                "settings": {
+                  "isPiece": false
+                },
+                "textureLayout": {},
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              },
+              "children": [
+                {
+                  "id": "4",
+                  "name": "Band",
+                  "position": {"x": 0.439, "y": 0.33097, "z": -0.05371},
+                  "orientation": {"x": 0.70711, "y": 0, "z": 0, "w": 0.70711},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": -1, "y": 3.5, "z": 0},
+                    "stretch": {"x": -0.8, "y": 1, "z": 1.085},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 16, "y": 3, "z": 16}
+                    },
+                    "textureLayout": {
+                      "back": {
+                        "offset": {"x": 54, "y": 15},
+                        "mirror": {"x": true, "y": false},
+                        "angle": 0
+                      },
+                      "right": {
+                        "offset": {"x": 38, "y": 15},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "front": {
+                        "offset": {"x": 38, "y": 15},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "left": {
+                        "offset": {"x": 38, "y": 15},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "top": {
+                        "offset": {"x": 0, "y": 16},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "bottom": {
+                        "offset": {"x": 16, "y": 16},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": false,
+                    "shadingMode": "flat"
+                  },
+                  "children": [
+                    {
+                      "id": "5",
+                      "name": "Band_Middle--C1",
+                      "position": {"x": 1, "y": -3.5, "z": 0},
+                      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                      "shape": {
+                        "type": "box",
+                        "offset": {"x": -1, "y": 0, "z": 0},
+                        "stretch": {"x": -0.8, "y": 1, "z": 1.085},
+                        "settings": {
+                          "isPiece": false,
+                          "size": {"x": 14, "y": 8, "z": 14},
+                          "isStaticBox": true
+                        },
+                        "textureLayout": {
+                          "back": {
+                            "offset": {"x": 63, "y": 24},
+                            "mirror": {"x": true, "y": false},
+                            "angle": 0
+                          },
+                          "right": {
+                            "offset": {"x": 49, "y": 24},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "front": {
+                            "offset": {"x": 49, "y": 24},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "left": {
+                            "offset": {"x": 49, "y": 24},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          }
+                        },
+                        "unwrapMode": "custom",
+                        "visible": true,
+                        "doubleSided": false,
+                        "shadingMode": "flat"
+                      }
+                    },
+                    {
+                      "id": "6",
+                      "name": "Band_Top--C2",
+                      "position": {"x": 1, "y": -4.5, "z": 0},
+                      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                      "shape": {
+                        "type": "box",
+                        "offset": {"x": -1, "y": -2.5, "z": 0},
+                        "stretch": {"x": -0.8, "y": 1, "z": 1.085},
+                        "settings": {
+                          "isPiece": false,
+                          "size": {"x": 16, "y": 3, "z": 16},
+                          "isStaticBox": true
+                        },
+                        "textureLayout": {
+                          "back": {
+                            "offset": {"x": 54, "y": 18},
+                            "mirror": {"x": true, "y": true},
+                            "angle": 0
+                          },
+                          "right": {
+                            "offset": {"x": 38, "y": 18},
+                            "mirror": {"x": false, "y": true},
+                            "angle": 0
+                          },
+                          "front": {
+                            "offset": {"x": 38, "y": 18},
+                            "mirror": {"x": false, "y": true},
+                            "angle": 0
+                          },
+                          "left": {
+                            "offset": {"x": 38, "y": 18},
+                            "mirror": {"x": false, "y": true},
+                            "angle": 0
+                          },
+                          "top": {
+                            "offset": {"x": 16, "y": 16},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "bottom": {
+                            "offset": {"x": 0, "y": 16},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          }
+                        },
+                        "unwrapMode": "custom",
+                        "visible": true,
+                        "doubleSided": false,
+                        "shadingMode": "flat"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "7",
+                  "name": "Ward",
+                  "position": {"x": 9.561, "y": 0.66902, "z": 0.05371},
+                  "orientation": {"x": -0.70705, "y": 0.00926, "z": -0.00926, "w": 0.70705},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": -0.03571, "y": 1.88629, "z": -0.10743},
+                    "stretch": {"x": -0.75, "y": 1, "z": 0.9},
+                    "settings": {
+                      "isPiece": true,
+                      "size": {"x": 4, "y": 1, "z": 6}
+                    },
+                    "textureLayout": {
+                      "back": {
+                        "offset": {"x": 56, "y": 0},
+                        "mirror": {"x": true, "y": false},
+                        "angle": 0
+                      },
+                      "right": {
+                        "offset": {"x": 43, "y": 8},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "front": {
+                        "offset": {"x": 38, "y": 0},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "left": {
+                        "offset": {"x": 43, "y": 0},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "top": {
+                        "offset": {"x": 52, "y": 7},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "bottom": {
+                        "offset": {"x": 38, "y": 7},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": false,
+                    "shadingMode": "fullbright"
+                  },
+                  "children": [
+                    {
+                      "id": "8",
+                      "name": "Ward_Middle--C1",
+                      "position": {"x": 0, "y": -3, "z": 0},
+                      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                      "shape": {
+                        "type": "box",
+                        "offset": {"x": 0, "y": 0, "z": 0},
+                        "stretch": {"x": -0.75, "y": 1, "z": 0.9},
+                        "settings": {
+                          "isPiece": false,
+                          "size": {"x": 4, "y": 5, "z": 8},
+                          "isStaticBox": true
+                        },
+                        "textureLayout": {
+                          "back": {
+                            "offset": {"x": 56, "y": 1},
+                            "mirror": {"x": true, "y": false},
+                            "angle": 0
+                          },
+                          "right": {
+                            "offset": {"x": 43, "y": 9},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "front": {
+                            "offset": {"x": 38, "y": 1},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "left": {
+                            "offset": {"x": 43, "y": 1},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "top": {
+                            "offset": {"x": 52, "y": 7},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "bottom": {
+                            "offset": {"x": 38, "y": 7},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          }
+                        },
+                        "unwrapMode": "custom",
+                        "visible": true,
+                        "doubleSided": false,
+                        "shadingMode": "fullbright"
+                      }
+                    },
+                    {
+                      "id": "9",
+                      "name": "Ward_Bottom--C2",
+                      "position": {"x": 0, "y": -3, "z": 0},
+                      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                      "shape": {
+                        "type": "box",
+                        "offset": {"x": 0, "y": -3, "z": 0},
+                        "stretch": {"x": -0.75, "y": 1, "z": 0.9},
+                        "settings": {
+                          "isPiece": false,
+                          "size": {"x": 4, "y": 1, "z": 6},
+                          "isStaticBox": true
+                        },
+                        "textureLayout": {
+                          "back": {
+                            "offset": {"x": 56, "y": 6},
+                            "mirror": {"x": true, "y": false},
+                            "angle": 0
+                          },
+                          "right": {
+                            "offset": {"x": 43, "y": 14},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "front": {
+                            "offset": {"x": 38, "y": 6},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "left": {
+                            "offset": {"x": 43, "y": 6},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "top": {
+                            "offset": {"x": 52, "y": 7},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "bottom": {
+                            "offset": {"x": 38, "y": 7},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          }
+                        },
+                        "unwrapMode": "custom",
+                        "visible": true,
+                        "doubleSided": false,
+                        "shadingMode": "fullbright"
+                      }
+                    },
+                    {
+                      "id": "10",
+                      "name": "Ward_Trunk--C3",
+                      "position": {"x": 0.5, "y": 1, "z": 0},
+                      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                      "shape": {
+                        "type": "box",
+                        "offset": {"x": -0.5, "y": 0, "z": 0},
+                        "stretch": {"x": -0.75, "y": 1, "z": 0.9},
+                        "settings": {
+                          "isPiece": false,
+                          "size": {"x": 2, "y": 2, "z": 3},
+                          "isStaticBox": true
+                        },
+                        "textureLayout": {
+                          "back": {
+                            "offset": {"x": 59, "y": 12},
+                            "mirror": {"x": false, "y": true},
+                            "angle": 270
+                          },
+                          "right": {
+                            "offset": {"x": 59, "y": 10},
+                            "mirror": {"x": true, "y": true},
+                            "angle": 270
+                          },
+                          "front": {
+                            "offset": {"x": 59, "y": 10},
+                            "mirror": {"x": true, "y": true},
+                            "angle": 270
+                          },
+                          "left": {
+                            "offset": {"x": 59, "y": 10},
+                            "mirror": {"x": true, "y": true},
+                            "angle": 270
+                          },
+                          "top": {
+                            "offset": {"x": 52, "y": 2},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          }
+                        },
+                        "unwrapMode": "custom",
+                        "visible": true,
+                        "doubleSided": false,
+                        "shadingMode": "fullbright"
+                      }
+                    },
+                    {
+                      "id": "11",
+                      "name": "Ward_Stem--C4",
+                      "position": {"x": 0, "y": 2.38268, "z": -0.07388},
+                      "orientation": {"x": 0.19213, "y": 0.17031, "z": 0.03388, "w": 0.96588},
+                      "shape": {
+                        "type": "box",
+                        "offset": {"x": 0, "y": 0, "z": 0},
+                        "stretch": {"x": -0.75, "y": 1, "z": 0.9},
+                        "settings": {
+                          "isPiece": false,
+                          "size": {"x": 1, "y": 2, "z": 1},
+                          "isStaticBox": true
+                        },
+                        "textureLayout": {
+                          "back": {
+                            "offset": {"x": 57, "y": 3},
+                            "mirror": {"x": false, "y": true},
+                            "angle": 270
+                          },
+                          "right": {
+                            "offset": {"x": 57, "y": 4},
+                            "mirror": {"x": true, "y": true},
+                            "angle": 270
+                          },
+                          "front": {
+                            "offset": {"x": 57, "y": 2},
+                            "mirror": {"x": true, "y": true},
+                            "angle": 270
+                          },
+                          "left": {
+                            "offset": {"x": 57, "y": 2},
+                            "mirror": {"x": true, "y": true},
+                            "angle": 270
+                          },
+                          "top": {
+                            "offset": {"x": 52, "y": 2},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          }
+                        },
+                        "unwrapMode": "custom",
+                        "visible": true,
+                        "doubleSided": false,
+                        "shadingMode": "fullbright"
+                      }
+                    },
+                    {
+                      "id": "12",
+                      "name": "Leaf_L",
+                      "position": {"x": -0.875, "y": 2.95665, "z": 1.21293},
+                      "orientation": {"x": 0.24848, "y": 0.27029, "z": 0.07243, "w": 0.92734},
+                      "shape": {
+                        "type": "none",
+                        "offset": {"x": 0, "y": 0, "z": 0},
+                        "stretch": {"x": 0, "y": 0, "z": 0},
+                        "settings": {
+                          "isPiece": false
+                        },
+                        "textureLayout": {},
+                        "unwrapMode": "custom",
+                        "visible": true,
+                        "doubleSided": false,
+                        "shadingMode": "flat"
+                      },
+                      "children": [
+                        {
+                          "id": "13",
+                          "name": "Leaf_Stem_L--C1",
+                          "position": {"x": 0.375, "y": -0.19375, "z": 0.16875},
+                          "orientation": {"x": -0.32144, "y": 0, "z": 0, "w": 0.94693},
+                          "shape": {
+                            "type": "box",
+                            "offset": {"x": 0, "y": 0, "z": 0},
+                            "stretch": {"x": -0.75, "y": 1, "z": 0.9},
+                            "settings": {
+                              "isPiece": false,
+                              "size": {"x": 3, "y": 0, "z": 1},
+                              "isStaticBox": true
+                            },
+                            "textureLayout": {
+                              "top": {
+                                "offset": {"x": 27, "y": 9},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "bottom": {
+                                "offset": {"x": 27, "y": 10},
+                                "mirror": {"x": true, "y": false},
+                                "angle": 180
+                              }
+                            },
+                            "unwrapMode": "custom",
+                            "visible": true,
+                            "doubleSided": false,
+                            "shadingMode": "fullbright"
+                          }
+                        },
+                        {
+                          "id": "14",
+                          "name": "Leaf_Base_L--C2",
+                          "position": {"x": -0.125, "y": 0.30625, "z": 1.39375},
+                          "orientation": {"x": -0.13053, "y": 0, "z": 0, "w": 0.99144},
+                          "shape": {
+                            "type": "box",
+                            "offset": {"x": 0, "y": 0, "z": 0},
+                            "stretch": {"x": -0.75, "y": 1, "z": 0.9},
+                            "settings": {
+                              "isPiece": false,
+                              "size": {"x": 6, "y": 0, "z": 2},
+                              "isStaticBox": true
+                            },
+                            "textureLayout": {
+                              "top": {
+                                "offset": {"x": 25, "y": 10},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "bottom": {
+                                "offset": {"x": 25, "y": 12},
+                                "mirror": {"x": true, "y": false},
+                                "angle": 180
+                              }
+                            },
+                            "unwrapMode": "custom",
+                            "visible": true,
+                            "doubleSided": false,
+                            "shadingMode": "fullbright"
+                          }
+                        },
+                        {
+                          "id": "15",
+                          "name": "Leaf_Middle_L--C3",
+                          "position": {"x": -0.125, "y": 0.00625, "z": 3.96875},
+                          "orientation": {"x": 0.15212, "y": 0, "z": 0, "w": 0.98836},
+                          "shape": {
+                            "type": "box",
+                            "offset": {"x": 0, "y": 0, "z": 0},
+                            "stretch": {"x": -0.75, "y": 1, "z": 0.9},
+                            "settings": {
+                              "isPiece": false,
+                              "size": {"x": 6, "y": 0, "z": 4},
+                              "isStaticBox": true
+                            },
+                            "textureLayout": {
+                              "top": {
+                                "offset": {"x": 19, "y": 8},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "bottom": {
+                                "offset": {"x": 19, "y": 12},
+                                "mirror": {"x": true, "y": false},
+                                "angle": 180
+                              }
+                            },
+                            "unwrapMode": "custom",
+                            "visible": true,
+                            "doubleSided": false,
+                            "shadingMode": "fullbright"
+                          }
+                        },
+                        {
+                          "id": "16",
+                          "name": "Leaf_Tip_L--C4",
+                          "position": {"x": -0.125, "y": -0.11875, "z": 6.46875},
+                          "orientation": {"x": -0.23769, "y": 0, "z": 0, "w": 0.97134},
+                          "shape": {
+                            "type": "box",
+                            "offset": {"x": 0, "y": 0, "z": 0},
+                            "stretch": {"x": -0.75, "y": 1, "z": 0.9},
+                            "settings": {
+                              "isPiece": false,
+                              "size": {"x": 4, "y": 0, "z": 2},
+                              "isStaticBox": true
+                            },
+                            "textureLayout": {
+                              "top": {
+                                "offset": {"x": 17, "y": 12},
+                                "mirror": {"x": true, "y": true},
+                                "angle": 90
+                              },
+                              "bottom": {
+                                "offset": {"x": 19, "y": 8},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 90
+                              }
+                            },
+                            "unwrapMode": "custom",
+                            "visible": true,
+                            "doubleSided": false,
+                            "shadingMode": "fullbright"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "17",
+                      "name": "leaf_R",
+                      "position": {"x": 1.125, "y": 3.45665, "z": -0.38707},
+                      "orientation": {"x": -0.05455, "y": -0.9846, "z": 0.15154, "w": -0.06797},
+                      "shape": {
+                        "type": "none",
+                        "offset": {"x": 0, "y": 0, "z": 0},
+                        "stretch": {"x": 0, "y": 0, "z": 0},
+                        "settings": {
+                          "isPiece": false
+                        },
+                        "textureLayout": {},
+                        "unwrapMode": "custom",
+                        "visible": true,
+                        "doubleSided": false,
+                        "shadingMode": "flat"
+                      },
+                      "children": [
+                        {
+                          "id": "18",
+                          "name": "Leaf_Stem_R--C1",
+                          "position": {"x": 0.375, "y": -0.19375, "z": 0.16875},
+                          "orientation": {"x": -0.32144, "y": 0, "z": 0, "w": 0.94693},
+                          "shape": {
+                            "type": "box",
+                            "offset": {"x": 0, "y": 0, "z": 0},
+                            "stretch": {"x": -0.75, "y": 1, "z": 0.9},
+                            "settings": {
+                              "isPiece": false,
+                              "size": {"x": 3, "y": 0, "z": 1},
+                              "isStaticBox": true
+                            },
+                            "textureLayout": {
+                              "top": {
+                                "offset": {"x": 27, "y": 9},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "bottom": {
+                                "offset": {"x": 27, "y": 10},
+                                "mirror": {"x": true, "y": false},
+                                "angle": 180
+                              }
+                            },
+                            "unwrapMode": "custom",
+                            "visible": true,
+                            "doubleSided": false,
+                            "shadingMode": "fullbright"
+                          }
+                        },
+                        {
+                          "id": "19",
+                          "name": "Leaf_Base_R--C2",
+                          "position": {"x": -0.125, "y": 0.30625, "z": 1.39375},
+                          "orientation": {"x": -0.13053, "y": 0, "z": 0, "w": 0.99144},
+                          "shape": {
+                            "type": "box",
+                            "offset": {"x": 0, "y": 0, "z": 0},
+                            "stretch": {"x": -0.75, "y": 1, "z": 0.9},
+                            "settings": {
+                              "isPiece": false,
+                              "size": {"x": 6, "y": 0, "z": 2},
+                              "isStaticBox": true
+                            },
+                            "textureLayout": {
+                              "top": {
+                                "offset": {"x": 25, "y": 10},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "bottom": {
+                                "offset": {"x": 25, "y": 12},
+                                "mirror": {"x": true, "y": false},
+                                "angle": 180
+                              }
+                            },
+                            "unwrapMode": "custom",
+                            "visible": true,
+                            "doubleSided": false,
+                            "shadingMode": "fullbright"
+                          }
+                        },
+                        {
+                          "id": "20",
+                          "name": "Leaf_Middle_R--C3",
+                          "position": {"x": -0.125, "y": 0.00625, "z": 3.96875},
+                          "orientation": {"x": 0.15212, "y": 0, "z": 0, "w": 0.98836},
+                          "shape": {
+                            "type": "box",
+                            "offset": {"x": 0, "y": 0, "z": 0},
+                            "stretch": {"x": -0.75, "y": 1, "z": 0.9},
+                            "settings": {
+                              "isPiece": false,
+                              "size": {"x": 6, "y": 0, "z": 4},
+                              "isStaticBox": true
+                            },
+                            "textureLayout": {
+                              "top": {
+                                "offset": {"x": 19, "y": 8},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "bottom": {
+                                "offset": {"x": 19, "y": 12},
+                                "mirror": {"x": true, "y": false},
+                                "angle": 180
+                              }
+                            },
+                            "unwrapMode": "custom",
+                            "visible": true,
+                            "doubleSided": false,
+                            "shadingMode": "fullbright"
+                          }
+                        },
+                        {
+                          "id": "21",
+                          "name": "Leaf_Tip_R--C4",
+                          "position": {"x": -0.125, "y": -0.11875, "z": 6.46875},
+                          "orientation": {"x": -0.23769, "y": 0, "z": 0, "w": 0.97134},
+                          "shape": {
+                            "type": "box",
+                            "offset": {"x": 0, "y": 0, "z": 0},
+                            "stretch": {"x": -0.75, "y": 1, "z": 0.9},
+                            "settings": {
+                              "isPiece": false,
+                              "size": {"x": 4, "y": 0, "z": 2},
+                              "isStaticBox": true
+                            },
+                            "textureLayout": {
+                              "top": {
+                                "offset": {"x": 17, "y": 12},
+                                "mirror": {"x": true, "y": true},
+                                "angle": 90
+                              },
+                              "bottom": {
+                                "offset": {"x": 19, "y": 8},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 90
+                              }
+                            },
+                            "unwrapMode": "custom",
+                            "visible": true,
+                            "doubleSided": false,
+                            "shadingMode": "fullbright"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "format": "character",
+  "lod": "auto"
+}

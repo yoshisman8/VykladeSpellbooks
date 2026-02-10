@@ -1,0 +1,30 @@
+{
+  "Type": "DamageEntity",
+  "DamageCalculator": {
+    "Class": "Light",
+    "BaseDamage": {
+      "Projectile": 1
+    }
+  },
+  "Effects": {
+    "CameraEffect": "Impact"
+  },
+  "DamageEffects": {
+    "Knockback": {
+      "Force": 2,
+      "RelativeZ": -5
+    },
+    "WorldSoundEventId": "SFX_Skeleton_Mage_Spellbook_Impact",
+    "WorldParticles": [
+      {
+        "SystemId": "Magic_Hit",
+        "PositionOffset": {
+          "X": -1,
+          "Y": -1,
+          "Z": -1
+        }
+      }
+    ]
+  },
+  "Parent": "DamageEntityParent"
+}

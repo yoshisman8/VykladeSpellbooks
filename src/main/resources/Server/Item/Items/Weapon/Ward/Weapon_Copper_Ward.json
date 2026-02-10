@@ -1,0 +1,68 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Weapons.Copper_Ward.name",
+    "Description": "server.item.Weapons.Copper_Ward.description"
+  },
+  "Quality": "Common",
+  "ItemLevel": 10,
+  "MaxDurability": 100,
+  "Model": "Items/Weapons/Ward/Weapon_Copper_Ward.blockymodel",
+  "Texture": "Items/Weapons/Ward/Weapon_Copper_Ward.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Template_Ward.png",
+  "IconProperties": {
+    "Scale": 1.1,
+    "Rotation": [
+      0,
+      0,
+      66
+    ],
+    "Translation": [
+      -3,
+      -9
+    ]
+  },
+  "PlayerAnimationsId": "Vyklade_Ward",
+  "Parent": "Weapon_Template_Ward",
+  "InteractionVars": {
+    "Ward_Focus_Start": {
+      "Interactions": [
+        "Weapon_Ward_Secondary_Focus"
+      ]
+    },
+    "Ward_Focus_Wield": {
+      "Interactions": [
+        {
+          "Type": "Wielding",
+          "Parent": "Weapon_Ward_Secondary_Focus_Wield"
+        }
+      ]
+    },
+    "Ward_Magic_Burst": {
+      "Interactions": [
+        {
+          "Type": "Serial",
+          "Parent": "Weapon_Ward_Secondary_Focus_Bash"
+        }
+      ]
+    },
+    "Magic_Burst_Projectile": {
+      "Interactions": [
+        {
+          "Type": "Projectile",
+          "Parent": "Weapon_Ward_Secondary_Focus_Bash_Projectile",
+          "Config": "Vyklade_Ward_Magic_Burst_Copper"
+        }
+      ]
+    },
+    "Magic_Burst_Projectile_Charged": {
+      "Interactions": [
+        {
+          "Type": "Projectile",
+          "Parent": "Weapon_Ward_Secondary_Focus_Bash_Projectile",
+          "Config": "Vyklade_Ward_Magic_Burst_Copper_Charged"
+        }
+      ]
+    }
+  },
+  "Animation": "Items/Weapons/Ward/jitter.blockyanim"
+}

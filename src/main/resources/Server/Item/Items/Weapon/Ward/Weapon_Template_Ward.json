@@ -1,0 +1,81 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Weapons.Template_Ward.name",
+    "Description": "server.items.Weapons.Template_Ward.description"
+  },
+  "Quality": "Template",
+  "MaxStack": 1,
+  "Reticle": "DefaultMelee",
+  "ItemLevel": 0,
+  "ItemSoundSetId": "ISS_Armor_Leather",
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Wards"
+    ]
+  },
+  "Categories": [
+    "Items.Weapons"
+  ],
+  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
+  "Utility": {
+    "Usable": true,
+    "Compatible": true
+  },
+  "MaxDurability": 100,
+  "Model": "Items/Weapons/Ward/Weapon_Copper_Ward.blockymodel",
+  "Texture": "Items/Weapons/Ward/Weapon_Copper_Ward.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Template_Ward.png",
+  "IconProperties": {
+    "Scale": 1.1,
+    "Rotation": [
+      0,
+      0,
+      66
+    ],
+    "Translation": [
+      -3,
+      -9
+    ]
+  },
+  "PlayerAnimationsId": "Vyklade_Ward",
+  "Interactions": {
+    "Secondary": "Root_Ward_Secondary",
+    "HeldOffhand": "Root_Ward_Held"
+  },
+  "Weapon": {},
+  "InteractionVars": {
+    "Ward_Focus_Start": {
+      "Interactions": [
+        "Weapon_Ward_Secondary_Focus"
+      ]
+    },
+    "Ward_Focus_Wield": {
+      "Interactions": [
+        {
+          "Type": "Wielding",
+          "Parent": "Weapon_Ward_Secondary_Focus_Wield"
+        }
+      ]
+    },
+    "Ward_Magic_Burst": {
+      "Interactions": [
+        {
+          "Type": "Serial",
+          "Parent": "Weapon_Ward_Secondary_Focus_Bash"
+        }
+      ]
+    },
+    "Magic_Burst_Projectile": {
+      "Interactions": [
+        {
+          "Type": "Projectile",
+          "Parent": "Weapon_Ward_Secondary_Focus_Bash_Projectile",
+          "Config": "Vyklade_Ward_Magic_Burst"
+        }
+      ]
+    }
+  }
+}
